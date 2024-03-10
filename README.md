@@ -1,4 +1,4 @@
-# AI Engineering template
+# RadioCare
 
 ----------------------------------------------------------------------------------------
 
@@ -7,8 +7,6 @@
 [![docs](https://github.com/VectorInstitute/aieng-template/actions/workflows/docs_deploy.yml/badge.svg)](https://github.com/VectorInstitute/aieng-template/actions/workflows/docs_deploy.yml)
 [![codecov](https://codecov.io/gh/VectorInstitute/aieng-template/branch/main/graph/badge.svg)](https://codecov.io/gh/VectorInstitute/aieng-template)
 [![license](https://img.shields.io/github/license/VectorInstitute/aieng-template.svg)](https://github.com/VectorInstitute/aieng-template/blob/main/LICENSE)
-
-A template repo for AI Engineering projects (using ``python``)
 
 ## 🧑🏿‍💻 Developing
 
