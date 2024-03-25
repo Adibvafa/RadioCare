@@ -34,7 +34,7 @@ class MimicIVCXR(Dataset):
     def __init__(self,
                  data_root: str,
                  transform: Optional[Callable[[Image.Image], torch.Tensor]] = None
-                 ) -> None:
+                 ):
         """Initialize the dataset."""
         self.transform = transform or Compose([Resize(224),
                                                CenterCrop(224),
@@ -44,7 +44,7 @@ class MimicIVCXR(Dataset):
         self.images_paths = df["radiograph_path"].tolist()
         self.text_paths = df["radio_report_path"].tolist()
 
-    def __getitem__(self, idx: int) -> Union[int, torch.Tensor, str]:
+    def __getitem__(self, idx: int):
         """Return the image at the specified index."""
         image_path = "data/" + self.images_paths[idx]
         text_path = "data/" + self.text_paths[idx]
@@ -60,12 +60,12 @@ class MimicIVCXR(Dataset):
 
         return [idx, image, text]
 
-    def __len__(self) -> int:
+    def __len__(self):
         """Return the length of the dataset."""
         return len(self.images_paths)
 
 
-def main() -> None:
+def main():
     data_root = "data/graph_report.csv"
     dataset = MimicIVCXR(data_root,None)
     print(dataset.__getitem__(4))
