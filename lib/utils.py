@@ -8,7 +8,7 @@ import numpy as np
 import torch
 
 
-def seed_everything(seed: int):
+def seed_everything(seed: int) -> None:
     """ Seed everything for reproducibility."""
     np.random.seed(seed)
     torch.manual_seed(seed)
