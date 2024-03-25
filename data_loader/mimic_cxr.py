@@ -64,10 +64,10 @@ class MimicIVCXR(Dataset):
         return len(self.images_paths)
 
 
-def main():
-    data_root = "data/graph_report.csv"
-    dataset = MimicIVCXR(data_root,None)
-    print(dataset.__getitem__(4))
+# def main():
+#     data_root = "data/graph_report.csv"
+#     dataset = MimicIVCXR(data_root,None)
+#     print(dataset.__getitem__(4))
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
