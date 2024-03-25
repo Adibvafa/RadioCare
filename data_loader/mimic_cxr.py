@@ -57,7 +57,7 @@ class MimicIVCXR(Dataset):
         with open(text_path, 'r') as file:
             text = file.read()
 
-        return idx, image, text
+        return [idx, image, text]
 
     def __len__(self) -> int:
         """Return the length of the dataset."""
