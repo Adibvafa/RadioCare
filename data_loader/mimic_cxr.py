@@ -13,7 +13,8 @@ from torch.utils.data import Dataset
 from torchvision.transforms import Compose, Grayscale, Resize, CenterCrop, ToTensor
 from pytorchvideo import transforms as pv_transforms
 from torchvision import transforms
-from typing import List
+from typing import List, Union
+
 
 
 
@@ -43,7 +44,7 @@ class MimicIVCXR(Dataset):
         self.images_paths = df["radiograph_path"].tolist()
         self.text_paths = df["radio_report_path"].tolist()
 
-    def __getitem__(self, idx: int) -> List[int, torch.Tensor, str]:
+    def __getitem__(self, idx: int) -> Union[List[int, torch.Tensor, str], None]:
         """Return the image at the specified index."""
         image_path = "data/" + self.images_paths[idx]
         text_path = "data/" + self.text_paths[idx]
@@ -64,10 +65,10 @@ class MimicIVCXR(Dataset):
         return len(self.images_paths)
 
 
-# def main():
-#     data_root = "data/graph_report.csv"
-#     dataset = MimicIVCXR(data_root,None)
-#     print(dataset.__getitem__(4))
+def main() -> None:
+    data_root = "data/graph_report.csv"
+    dataset = MimicIVCXR(data_root,None)
+    print(dataset.__getitem__(4))
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
