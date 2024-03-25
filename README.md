@@ -2,6 +2,13 @@
 
 ----------------------------------------------------------------------------------------
 
+## About
+
+RadioCare: Towards A Better Healthcare With AI
+
+Cutting-edge AI in Healthcare research focused on using Vision Transformers to analyze radiology images, in the '24 cohort of "Let's Solve It" program.
+
+
 [![code checks](https://github.com/VectorInstitute/aieng-template/actions/workflows/code_checks.yml/badge.svg)](https://github.com/VectorInstitute/aieng-template/actions/workflows/code_checks.yml)
 [![integration tests](https://github.com/VectorInstitute/aieng-template/actions/workflows/integration_tests.yml/badge.svg)](https://github.com/VectorInstitute/aieng-template/actions/workflows/integration_tests.yml)
 [![docs](https://github.com/VectorInstitute/aieng-template/actions/workflows/docs_deploy.yml/badge.svg)](https://github.com/VectorInstitute/aieng-template/actions/workflows/docs_deploy.yml)
