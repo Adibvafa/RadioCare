@@ -44,7 +44,7 @@ class MimicIVCXR(Dataset):
         self.images_paths = df["radiograph_path"].tolist()
         self.text_paths = df["radio_report_path"].tolist()
 
-    def __getitem__(self, idx: int) -> Union[List[int, torch.Tensor, str], None]:
+    def __getitem__(self, idx: int) -> Union[int, torch.Tensor, str]:
         """Return the image at the specified index."""
         image_path = "data/" + self.images_paths[idx]
         text_path = "data/" + self.text_paths[idx]
