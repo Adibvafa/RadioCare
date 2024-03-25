@@ -2809,6 +2809,19 @@ files = [
 ]
 
 [[package]]
+name = "torch"
+version = "1.13.1"
+description = "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "torch-1.10.0-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:0b9a6c7cb4b203ffaaeb422e8f8d5e23f5130df8b0a08d426f8a4b264bb358e1"},
+    {file = "torch-1.10.0-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:2c583b5d575da83e010956b9cf1e0bfe7cf1e8b579aaeecabb1e1a279fc43d86"},
+    {file = "torch-1.10.0-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:3d1b5f3b878d65a3f199b1ac3a5f4e758b5ec715b7d1ff711f3b7b5ac6a5bb50"},
+    {file = "torch-1.10.0-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:53a5de40df6a686fb43da0f02c4ef674056dcfc4d7eb0b13d77b16f2b164ff76"},
+]
+
+[[package]]
 name = "tornado"
 version = "6.4"
 description = "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed."
