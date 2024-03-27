@@ -23,8 +23,6 @@ class MimicIVCXR(Dataset):
 
     Parameters
     ----------
-    split: str ['train', 'validate', 'test']
-        Dataset split.
     data_root: str
         Path to the csv file containing all paths of the image dataset.
     transform: callable
